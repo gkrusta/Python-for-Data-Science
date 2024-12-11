@@ -17,7 +17,7 @@ def ft_counter(text):
     print(f"{digit} digits")
 
 
-if __name__ == "__main__":
+def main():
     """Handle user input and check for Assertion error"""
     if len(sys.argv) == 1:
         print("Enter a text: ")
@@ -30,3 +30,8 @@ if __name__ == "__main__":
         ft_counter(text)
     except AssertionError as e:
         print(f"AssertionEroor: {e}")
+ 
+
+
+if __name__ == "__main__":
+    main()

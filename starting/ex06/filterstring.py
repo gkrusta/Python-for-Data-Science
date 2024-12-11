@@ -8,7 +8,7 @@ if __name__ == "__main__":
     """
     try:
         if len(sys.argv) != 3:
-            raise AssertionError("AssertionError: the arguments are bad")
+            raise AssertionError("the arguments are bad")
         S = sys.argv[1]
         try:
             N = int(sys.argv[2])
@@ -16,7 +16,7 @@ if __name__ == "__main__":
             result = my_filter(lambda word: len(word) > N, words)
             print(result)
         except ValueError:
-            raise AssertionError("AssertionError: the arguments are bad")
+            raise AssertionError("the arguments are bad")
 
     except AssertionError as e:
         print(f"AssertionEroor: {e}")

@@ -9,7 +9,7 @@ def odd_or_even():
     try:
         nb = int(sys.argv[1])
     except ValueError:
-        raise AssertionError("AssertionError: argument is not an integer")
+        raise AssertionError("argument is not an integer")
 
     if nb % 2 == 0:
         print("I'm Even.")
