@@ -6,7 +6,7 @@ setup(
     description="A sample test package",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/gkrusta/ft_package",
+    url="https://github.com/gkrusta/Python-for-Data-Science/tree/main/starting/ex09/ft_package",
     author="gkrusta",
     author_email="gkrusta@student.42malaga.com",
     license="MIT",

@@ -23,7 +23,7 @@ def main():
     """
     try:
         for elem in ft_tqdm(range(333)):
-            pass 
+            pass
     except Exception as e:
         print(f"An error occurred: {e}")
 

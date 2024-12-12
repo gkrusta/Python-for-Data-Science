@@ -30,7 +30,6 @@ def main():
         ft_counter(text)
     except AssertionError as e:
         print(f"AssertionEroor: {e}")
- 
 
 
 if __name__ == "__main__":
