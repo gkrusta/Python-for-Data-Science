@@ -1,4 +1,4 @@
-def ft_tqdm(lst: range) -> None:
+def ft_tqdm(lst: range):
     """
     A simplified tqdm progress bar using the yield operator.
     """
