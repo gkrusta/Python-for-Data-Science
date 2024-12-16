@@ -24,7 +24,6 @@ ft_package/
 
 ├── pyproject.toml    # tools and dependencies required to build package
 
-├── requirements.txt  # List of dependencies
 
 ├── setup.py          # Setup script for installation
 
