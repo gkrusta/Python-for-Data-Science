@@ -22,6 +22,8 @@ def main():
     if len(sys.argv) == 1:
         print("Enter a text: ")
         text = input()
+        ft_counter(text)
+        return
     try:
         if len(sys.argv) > 2:
             raise AssertionError("AssertionError: too many arguments")
