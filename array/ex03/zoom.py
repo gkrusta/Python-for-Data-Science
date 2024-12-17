@@ -11,6 +11,7 @@ def zoom(pixels: np.ndarray, x_start: int, x_end: int, y_start: int, y_end: int)
 	try:
 		zoomed_image = [pixels[x_start:x_end, y_start:x_end]]
 		#plt.imshow(zoomed_image)
+		# An error occured: Invalid shape (1, 300, 200, 3) for image data
 		plt.xticks(np.arange(0, zoomed_image[1], 50))
 		plt.yticks(np.arange(0, zoomed_image[0], 50))
 		plt.show()
