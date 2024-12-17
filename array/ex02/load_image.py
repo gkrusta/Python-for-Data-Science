@@ -3,6 +3,11 @@ import numpy as np
 
 
 def ft_load(path: str):
+    """
+    Loads an image, converts it to RGB format,
+    and returns its pixel data as a NumPy array.
+    Prints the shape of the image.
+    """
     try:
         image = Image.open(path)
         if not image or image.format != "JPEG":

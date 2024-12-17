@@ -3,6 +3,11 @@ import numpy as np
 
 
 def ft_load(path: str):
+    """
+    Loads an image, converts it to RGB format,
+    and returns its pixel data as a NumPy array.
+    Prints the shape of the image.
+    """
     try:
         image = Image.open(path)
         if not image or image.format != "JPEG":
@@ -15,11 +20,3 @@ def ft_load(path: str):
         print(f"Error: File '{path}' not found. Please check the file path.")
     except Exception as e:
         print(f"An error occurred: {e}")
-
-
-def main():
-    print(ft_load("landscape.jpg"))
-
-
-if __name__ == "__main__":
-    main()
