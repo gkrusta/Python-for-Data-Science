@@ -14,7 +14,7 @@ ft_package/
 
 ├── ft_package/       # Package directory
 
-│		├── __init__.py   # Package initialization
+│		├── __init__.py   # It tells Python: "This folder is a package!"
 
 │		├── core.py       # main module with the function
 
@@ -22,14 +22,23 @@ ft_package/
 
 ├── README.md         # Description of package
 
-├── pyproject.toml    # tools and dependencies required to build package
+├── pyproject.toml    # It describes what tools are needed to build the package.
 
 
-├── setup.py          # Setup script for installation
+├── setup.py          # Package name, version, author, and dependencies.
 
 
 ## Installation
+```bash
+ -m build
+```
+
+The build tool creates two files:
+- `.tar.gz`: A compressed archive of your package source code.
+- `.whl` (wheel file): A ready-to-install version of your package.
+
 
 To install the package, run:
 ```bash
 pip install ./dist/ft_package-0.0.1.tar.gz
+```
