@@ -13,10 +13,8 @@ def rotate(image):
     rotated_image = np.zeros((rows, cols, channel), dtype=image.dtype)
 
     for row in range(rows):
-        i = 0
         for col in range(cols):
-            rotated_image[i, rows - 1 - row] = image[row, col]
-        i += 1
+            rotated_image[col, row] = image[row, col]
     return rotated_image
 
 

@@ -12,15 +12,15 @@ def zoom(pixels: np.ndarray,
     """
     try:
         zoomed_image = pixels[x_start:x_end, y_start:y_end]
-        grey_iamge = np.mean(zoomed_image, axis=2).astype(np.uint8)
-        grey_iamge = np.expand_dims(grey_iamge, axis=-1)
-        print("New shape after slicing:", grey_iamge.shape)
-        plt.imshow(grey_iamge, cmap="gray")
-        plt.xticks(np.arange(0, grey_iamge.shape[1], 50))
-        plt.yticks(np.arange(0, grey_iamge.shape[0], 50))
+        grey_image = np.mean(zoomed_image, axis=2).astype(np.uint8)
+        grey_image = np.expand_dims(grey_image, axis=-1)
+        print("New shape after slicing:", grey_image.shape)
+        plt.imshow(grey_image, cmap="gray")
+        plt.xticks(np.arange(0, grey_image.shape[1], 50))
+        plt.yticks(np.arange(0, grey_image.shape[0], 50))
         plt.show()
         plt.close()
-        return grey_iamge
+        return grey_image
     except Exception as e:
         print(f"An error occured: {e}")
 
